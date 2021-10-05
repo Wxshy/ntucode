@@ -1,0 +1,17 @@
+number = INPUT -> between 1-100
+
+guess = RANDOM NUMBER between 1-100
+
+counter = 1
+WHILE guess != number:
+    IF guess is higher than number THEN 
+        guess = RANDOM NUMBER between guess-100
+    ELSE
+        guess = RANDOM NUMBER between 1-guess
+    END IF
+    counter + 1
+END WHILE
+
+OUTPUT -> The computer took `counter` attempts to guess your number
+
+

@@ -1,0 +1,1 @@
+print(input('Please enter a message: ')[::-1])

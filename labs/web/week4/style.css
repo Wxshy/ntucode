@@ -1,0 +1,33 @@
+body{
+  text-align: center;
+}
+
+#menu{
+  background-color: #FFC;
+  width: 80%;
+}
+
+#menu ul{
+  list-style: none;
+
+}
+
+#menu li{
+  display: inline;
+  float: left;
+}
+
+#menu a{
+  text-decoration: none;
+  background-image: url(button-1.gif);
+  background-repeat: repeat-x;
+  background-position: left;
+}
+
+#menu span{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+

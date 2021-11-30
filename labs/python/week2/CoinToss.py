@@ -1,15 +1,11 @@
-from random import randint
+from random import choice
 
-#heads = 1 | tails = 0
+h = 0
+t = 0
 
-guess = input('Please guess either heads or tails: ')
-if guess == 'heads': guess = 1 
-else: guess = 0
-wins = 0
+for _ in range(100):
+    flip = choice(['heads', 'tails'])
+    if flip == 'tails': t += 1
+    else: h += 1
 
-for _ in range(10):
-    flip = randint(0,1)
-    print(f'Flip: {flip}')
-    if flip == guess: wins += 1
-
-print(f'You guess correctly {wins}/10!')
+print(f'There were {h} heads and {t} tails')

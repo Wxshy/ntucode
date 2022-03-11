@@ -64,7 +64,7 @@ pygame.init()
 screen = pygame.display.set_mode((800,800))
 pygame.display.set_caption('Game Of Life')
 
-pos_index = [0,1,2,3,4,5,6,7,8,9]
+pos_index = [ i for i in range(width)]
 
 
 grid = create_grid(height, width)
@@ -89,11 +89,11 @@ while run:
     cell_height = screen.get_height() / height
     border_size = 2
 
-    alive_colour = (0,255,0)
-    dead_colour = (255,0,0)
+    alive_colour = (255,255,255)
+    dead_colour = (0,0,0)
 
-    for y in range(10):
-        for x in range(10):
+    for y in range(height):
+        for x in range(width):
             if grid[y][x].alive:
                 pygame.draw.rect(screen, alive_colour, (x * cell_width + border_size, y * cell_height + border_size, cell_width - border_size, cell_height - border_size))
             else:
@@ -103,7 +103,7 @@ while run:
     print_grid(grid)
 
     pygame.display.update()
-    time.sleep(1)
+
     clock.tick(60)
 
                         

@@ -1,0 +1,35 @@
+#title{
+    text-align: center;
+    
+}
+body{
+    background-image: url(ireflag.webp);
+
+    background-size: 100% 100%;
+}
+
+.soundboard{
+    font-size: larger;
+    padding-top: 10%;
+    border-spacing: 10px 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.soundboard td{
+    border: 1px solid;
+    border-radius: 100px;
+    padding: 15px;
+    width: 30%;
+
+}
+
+.soundboard td:hover{
+    background-color: rgba(112, 112, 112, 0.5);
+    color: #fff;
+    transition: all 0.3s;
+}
+
+
+
+
